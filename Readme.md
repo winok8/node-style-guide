@@ -42,11 +42,11 @@ Sublime Text2 设置(perfernces > Settings - User)：
 ## 使用分号
 
 
-是否使用分号，在社区争论已久. isaac 也写过一篇讨论的文章 [the opposition][http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding], 但是，当可以用廉价的语法来消除一些可能引入的纠错机制的时候，请当一个保守派。
+是否使用分号，在社区争论已久. isaac 也写过一篇讨论的[文章](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding), 但是，当可以用廉价的语法来消除一些可能引入的错误的时候，请当一个保守派。
 
 ## 每行80个字符
 
-限制你每行代码不超过80个字符。尽管现在的显示器越来越大，但是你的大脑并没有变大，把你的大显示器切分成多屏来显示。
+限制你每行代码不超过80个字符。尽管现在的显示器越来越大，但是你的大脑并没有变大，并且你还可以把你的大显示器切分成多屏来显示。
 
 Sublime Text 2 设置(perfernces > Settings - User)：
 
