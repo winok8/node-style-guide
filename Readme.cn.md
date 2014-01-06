@@ -72,7 +72,7 @@ var foo = 'bar';
 var foo = "bar";
 ```
 
-## 左大括号放在语句开始的这行
+## 大括号位置
 
 请把你的所有的左大括号都放在语句开始的这一行。
 
@@ -456,3 +456,25 @@ if (isSessionValid) {
 当没有[副作用][sideeffect]的时候，可以使用 getters，例如提供一个集合类的长度属性的时候。
 
 [sideeffect]: http://en.wikipedia.org/wiki/Side_effect_(computer_science)
+
+## 异步回调函数
+
+Node 的异步回调函数的第一个参数应该是错误指示，只有这样才能够享受许多流程控制模块的福利。
+
+```
+function cb(err, data , ...) {...}
+```
+
+## 继承
+
+尽管有许多的方法来实现继承，但是最为推荐的是 Node 的标准写法：
+
+```
+function Socket(options) {
+  // ...
+  stream.Stream.call(this);
+  // ...
+}
+
+util.inherits(Socket, stream.Stream);
+```
