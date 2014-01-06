@@ -243,7 +243,7 @@ if (a == '') {
 
 [comparisonoperators]: https://developer.mozilla.org/en/JavaScript/Reference/Operators/Comparison_Operators
 
-## 用多行三元操作符
+## 三元操作符分多行
 
 三元操作符不应该写在一行，将它分割到多行。
 
