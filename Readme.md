@@ -1,8 +1,11 @@
 # Node.js Style Guide
 
-这是一份如何写出一致且美观的 Node.js 代码的代码风格指南。它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
+这是一份关于如何写出一致且美观的 Node.js 代码的风格指南。
+它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
 
-这份指南由 [Felix](http://felixge.de/) 编写。通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。你可以 fork 这份指南，并针对自己的需求的进行部分的调整。
+这份指南由 [Felix](http://felixge.de/) 编写。
+通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。
+你可以 fork 这份指南，并针对自己的需求的进行部分的调整。
 
 中文指南由 [dead_horse](http://deadhorse.me) 翻译，同时根据个人和团队经验有部分增加条目。
 
@@ -21,7 +24,8 @@ Sublime Text 2 设置(perfernces > Settings - User)：
 
 ## 换行
 
-使用 UNIX 风格的换行符 (`\n`)，同时在每个文件的结尾添加一个换行符。 Windows 风格的换行符 (`\r\n`) 是绝对禁止出现在任何项目中的。
+使用 UNIX 风格的换行符 (`\n`)，同时在每个文件的结尾添加一个换行符。
+Windows 风格的换行符 (`\r\n`) 是绝对禁止出现在任何项目中的。
 
 Sublime Text 2 设置(perfernces > Settings - User)：
 
@@ -41,8 +45,9 @@ Sublime Text2 设置(perfernces > Settings - User)：
 
 ## 使用分号
 
-
-是否使用分号，在社区争论已久. isaac 也写过一篇讨论的[文章](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding), 但是，当可以用廉价的语法来消除一些可能引入的错误的时候，请当一个保守派。
+是否使用分号，在社区争论已久。
+isaac 也写过一篇讨论的[文章](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)，
+但是，当可以用廉价的语法来消除一些可能引入的错误的时候，请当一个保守派。
 
 ## 每行80个字符
 
@@ -97,7 +102,7 @@ if (true)
 
 ## 每个变量声明都带一个 var
 
-每个变量声明都带一个 var , 这样删除或者调整变量声明的顺序会更加容易。
+每个变量声明都带一个 var ，这样删除或者调整变量声明的顺序会更加容易。
 不要把变量都声明在最前面，而是声明在它最有意义的地方。
 
 *Right:*
@@ -129,7 +134,9 @@ while (items.length) {
 
 ## 变量、属性和函数名都采用小驼峰
 
-变量、属性和函数的命名风格都需要遵循小驼峰风格. 同时所有的命名都是有意义的。尽量避免用单字符变量和少见单词来命名。
+变量、属性和函数的命名风格都需要遵循小驼峰风格。
+同时所有的命名都是有意义的。
+尽量避免用单字符变量和少见单词来命名。
 
 *Right:*
 
@@ -166,7 +173,8 @@ function bank_Account() {
 
 常量变量和对象的静态常量属性都需要特殊表明，通过全部大写的方式来表明。
 
-尽管 Node.js / V8 支持 mozilla的 [const][const] 关键字, 但是不幸的是，对象的属性并不支持这个关键字, 而且 const 没有包含于任何一个 ECMA 规范中。
+尽管 Node.js / V8 支持 mozilla 的 [const][const] 关键字，
+但是不幸的是，对象的属性并不支持这个关键字，而且 const 没有包含于任何一个 ECMA 规范中。
 
 *Right:*
 
@@ -192,8 +200,8 @@ File.fullPermissions = 0777;
 
 ## 对象、数组的创建
 
-
-使用尾随逗号，尽量用一行来声明，只有在编译器不接受的情况下才把对象的 key 用单引号包裹。使用字面表达式，用 `{}, []` 代替 `new Array, new Object`。
+使用尾随逗号，尽量用一行来声明，只有在编译器不接受的情况下才把对象的 key 用单引号包裹。
+使用字面表达式，用 `{}, []` 代替 `new Array, new Object`。
 
 *Right:*
 
@@ -218,7 +226,7 @@ var b = {"good": 'code'
 
 ## 使用 === 比较符
 
-写代码并不是在背这些 [stupid rules][comparisonoperators]. 使用 `===` 操作符来进行比较操作，它会完全按照你的期望来执行。
+写代码并不是在背这些 [stupid rules][comparisonoperators] 。使用 `===` 操作符来进行比较操作，它会完全按照你的期望来执行。
 
 *Right:*
 
@@ -309,7 +317,9 @@ if (password.length >= 4 && /^(?=.*\d).{4,}$/.test(password)) {
 
 ## 写精简的函数
 
-保持你的函数尽可能的精简。一个好的函数应该能够在幻灯片上一屏显示，并且让坐在教室最后一排的人看清楚。别再去数你的每一个函数并控制在15行以内了。
+保持你的函数尽可能的精简。
+一个好的函数应该能够在幻灯片上一屏显示，并且让坐在教室最后一排的人看清楚。
+别再去数你的每一个函数并控制在15行以内了。
 
 ## 尽早的从函数中返回
 
@@ -358,7 +368,8 @@ function isPercentage(val) {
 
 ## 给你的闭包命名
 
-请尽量给你的闭包、匿名函数命名。这让人知道你在意这个函数, 更重要的是，这将会产生可读性更好的堆栈跟踪和CPU调用信息等。
+请尽量给你的闭包、匿名函数命名。
+这让人知道你在意这个函数，更重要的是，这将会产生可读性更好的堆栈跟踪和CPU调用信息等。
 
 *Right:*
 
@@ -404,7 +415,9 @@ setTimeout(function() {
 
 ## 使用单行注释风格
 
-不管是单行注释还是多行注释，都使用 `//` 。同时请尝试在更高层次来编写注释（解释函数整体的思路），只在解释一些难以理解代码的时候添加注释，而不是给一些琐碎的东西加上注释。
+不管是单行注释还是多行注释，都使用 `//` 。
+同时请尝试在更高层次来编写注释（解释函数整体的思路），
+只在解释一些难以理解代码的时候添加注释，而不是给一些琐碎的东西加上注释。
 
 *Right:*
 
@@ -448,7 +461,7 @@ if (isSessionValid) {
 
 这一堆屎一样的东西，你永远都不会需要他们。
 
-## Getters 和 setters
+## Getters 和 Setters
 
 不要使用 setters ，他们会引发一些使用你的代码的人无法解决的问题。
 当没有[副作用][sideeffect]的时候，可以使用 getters，例如提供一个集合类的长度属性的时候。
@@ -487,9 +500,9 @@ util.inherits(Socket, stream.Stream);
 
 ## 文件命名
 
-单词之间使用 `_` underscore 来分割，如果你不想暴露某个文件给用户 ， 你也可以用 `_` 来开头
+单词之间使用 `_` underscore 来分割，如果你不想暴露某个文件给用户，你也可以用 `_` 来开头
 
-*Right :*
+*Right:*
 
 ```
 child_process.js
@@ -511,7 +524,7 @@ stringDecoder.js
 *Right:*
 
 ```js
-var add = function(a, b) {
+var add = function (a, b) {
   return a + b;
 };
 ```
