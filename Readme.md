@@ -98,7 +98,7 @@ if (true)
 ## 每个变量声明都带一个 var
 
 每个变量声明都带一个 var , 这样删除或者调整变量声明的顺序会更加容易。
-请无视 [Crockford][crockfordconvention]，不要把变量都声明在最前面，而是声明在它最有意义的地方。
+不要把变量都声明在最前面，而是声明在它最有意义的地方。
 
 *Right:*
 
@@ -126,8 +126,6 @@ while (items.length) {
   object[key] = values.pop();
 }
 ```
-
-[crockfordconvention]: http://javascript.crockford.com/code.html
 
 ## 变量、属性和函数名都采用小驼峰
 
@@ -195,7 +193,7 @@ File.fullPermissions = 0777;
 ## 对象、数组的创建
 
 
-使用尾随逗号，尽量用一行来声明，只有在编译器不接受的情况下才把对象的 key 用单引号包裹。
+使用尾随逗号，尽量用一行来声明，只有在编译器不接受的情况下才把对象的 key 用单引号包裹。使用字面表达式，用 `{}, []` 代替 `new Array, new Object`。
 
 *Right:*
 
@@ -485,6 +483,25 @@ function Socket(options) {
 }
 
 util.inherits(Socket, stream.Stream);
+```
+
+## 文件命名
+
+单词之间使用 `_` underscore 来分割，如果你不想暴露某个文件给用户 ， 你也可以用 `_` 来开头
+
+*Right :*
+
+```
+child_process.js
+string_decoder.js
+_linklist.js
+```
+
+*Wrong:*
+
+```
+childProcess.js
+stringDecoder.js
 ```
 
 ## 空格
