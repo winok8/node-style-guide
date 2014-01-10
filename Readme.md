@@ -1,6 +1,6 @@
 # Node.js Style Guide
 
-这是一份如何写出一致且美观的 node.js 代码的代码风格指南。它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
+这是一份如何写出一致且美观的 Node.js 代码的代码风格指南。它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
 
 这份指南由 [Felix](http://felixge.de/) 编写。通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。你可以 fork 这份指南，并针对自己的需求的进行部分的调整。
 
@@ -131,7 +131,7 @@ while (items.length) {
 
 ## 变量、属性和函数名都采用小驼峰
 
-变量、属性和函数的命名风格都需要遵循小驼峰风格. 同时所有的命名都是有意义的. 尽量避免用单字符变量和少见单词来命名。
+变量、属性和函数的命名风格都需要遵循小驼峰风格. 同时所有的命名都是有意义的。尽量避免用单字符变量和少见单词来命名。
 
 *Right:*
 
@@ -406,7 +406,7 @@ setTimeout(function() {
 
 ## 使用单行注释风格
 
-不管是单行注释还是多行注释，都使用 `//` 。尝试编写更高层次的注释，只在解释一些难以理解代码的时候添加注释，而不是给一些琐碎的东西加上注释。
+不管是单行注释还是多行注释，都使用 `//` 。同时请尝试在更高层次来编写注释（解释函数整体的思路），只在解释一些难以理解代码的时候添加注释，而不是给一些琐碎的东西加上注释。
 
 *Right:*
 
@@ -461,15 +461,23 @@ if (isSessionValid) {
 
 Node 的异步回调函数的第一个参数应该是错误指示，只有这样才能够享受许多流程控制模块的福利。
 
-```
+*Right:*
+
+```js
 function cb(err, data , ...) {...}
+```
+
+*Wrong:*
+
+```js
+function cb(data, ...) {...}
 ```
 
 ## 继承
 
 尽管有许多的方法来实现继承，但是最为推荐的是 Node 的标准写法：
 
-```
+```js
 function Socket(options) {
   // ...
   stream.Stream.call(this);
@@ -478,3 +486,28 @@ function Socket(options) {
 
 util.inherits(Socket, stream.Stream);
 ```
+
+## 空格
+
+在所有的操作符前后都添加空格，`function` 关键字后面添加空格
+
+*Right:*
+
+```js
+var add = function(a, b) {
+  return a + b;
+};
+```
+
+*Wrong:*
+
+```js
+var add=function(a,b){
+  return a+b;
+}
+```
+
+## 尽量参照 Node.js 源码的编码风格
+
+[node 源码](https://github.com/joyent/node)
+[Google’s JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
