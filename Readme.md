@@ -2,7 +2,7 @@
 
 这是一份如何写出一致且美观的 node.js 代码的代码风格指南。它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
 
-这份指南由 [Felix Geisend枚rfer](http://felixge.de/) 编写。通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。你可以 fork 这份指南，并针对自己的需求的进行部分的调整。
+这份指南由 [Felix](http://felixge.de/) 编写。通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。你可以 fork 这份指南，并针对自己的需求的进行部分的调整。
 
 中文指南由 [dead_horse](http://deadhorse.me) 翻译，同时根据个人和团队经验有部分增加条目。
 
