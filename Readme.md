@@ -509,5 +509,6 @@ var add=function(a,b){
 
 ## 尽量参照 Node.js 源码的编码风格
 
-[node 源码](https://github.com/joyent/node)
-[Google’s JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+* [node 源码](https://github.com/joyent/node)
+
+* [Google’s JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
