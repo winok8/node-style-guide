@@ -527,5 +527,8 @@ var add=function(a,b){
 ## 尽量参照 Node.js 源码的编码风格
 
 * [node 源码](https://github.com/joyent/node)
-
 * [Google’s JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+
+## 入乡随俗
+
+给别人的项目提交 pull request 的时候，要注意遵循项目的编码规范，保持项目编码风格的统一。
