@@ -11,9 +11,9 @@
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
 
-## 2空格缩进
+## tab缩进
 
-使用2个空格而不是 tab 来进行代码缩进，同时绝对不要混用空格和 tab 。
+使用tab代码缩进，tab 占四个空白。
 
 Sublime Text 2 设置(perfernces > Settings - User)：
 
@@ -49,17 +49,6 @@ Sublime Text2 设置(perfernces > Settings - User)：
 isaac 也写过一篇讨论的[文章](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)，
 但是，当可以用廉价的语法来消除一些可能引入的错误的时候，请当一个保守派。
 
-## 每行80个字符
-
-限制你每行代码不超过80个字符。尽管现在的显示器越来越大，但是你的大脑并没有变大，并且你还可以把你的大显示器切分成多屏来显示。
-
-Sublime Text 2 设置(perfernces > Settings - User)：
-
-```
-  "rulers": [80]
-```
-
-多屏：`view > Layout > Columns 2`
 
 ## 使用单引号
 
