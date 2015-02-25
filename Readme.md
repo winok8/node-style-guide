@@ -18,7 +18,7 @@
 Sublime Text 2 设置(perfernces > Settings - User)：
 
 ```
-  "tab_size": 2,
+  "tab_size": 4,
   "translate_tabs_to_spaces": true
 ```
 
