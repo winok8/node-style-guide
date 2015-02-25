@@ -2,6 +2,7 @@
 
 这是一份关于如何写出一致且美观的 Node.js 代码的风格指南。
 它从社区最流行的写法中抽取出来，同时融入了部分个人观点。
+目前香果科技采用该标准。
 
 这份指南由 [Felix](http://felixge.de/) 编写。
 通过 [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) 发布。
