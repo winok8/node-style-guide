@@ -402,8 +402,42 @@ setTimeout(function() {
   });
 }, 1000);
 ```
+## 函数头部试用/* */ 注释风格
 
-## 使用单行注释风格
+*Right:*
+```js
+/**
+ * Execute the generator function or a generator
+ * and return a promise.
+ *
+ * @param {Function} fn
+ * @return {Promise}
+ * @api public
+ */
+
+function co(gen) {
+...
+}
+```
+
+*Wrong:*
+
+```js
+//
+// Execute the generator function or a generator
+// and return a promise.
+//
+// @param {Function} fn
+// @return {Promise}
+// @api public
+//
+
+function co(gen) {
+...
+}
+```
+
+## 在函数中使用单行注释风格
 
 不管是单行注释还是多行注释，都使用 `//` 。
 同时请尝试在更高层次来编写注释（解释函数整体的思路），
